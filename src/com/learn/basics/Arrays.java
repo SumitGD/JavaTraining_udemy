@@ -5,7 +5,7 @@ import java.lang.reflect.Array;
 import javax.swing.text.ZoneView;
 
 public class Arrays {
-	public static void main(String[] args) {
+	public static void main(String_Learn[] args) {
 
 		/**
 		 * @topic : Array 
@@ -31,11 +31,10 @@ public class Arrays {
 		array1[2]="third array";
 
 		System.out.println("print first element of array1 "+ array1[0]);
-		
+
 		for(int i=0; i<array1.length; i++) {
 			System.out.println(array1[i]);
 		}
-
 
 		/**
 		 * 2. data_type[] array_name = {value1, value2,....n};
@@ -43,10 +42,18 @@ public class Arrays {
 		int [] arr2 = {12,32,32,3,2};
 		String[] stringArry = {"Sumit", "learning ", "java"};
 		System.out.println(stringArry[2]);
-		
+
 		for(int i=0; i<arr2.length; i++) {
 			System.out.println(arr2[i]);
 		}
+
+		// other simple way to access array
+
+		for(int s : arr2) {
+			System.out.println(s+" simple way");
+		}
+		
+		
 
 
 
